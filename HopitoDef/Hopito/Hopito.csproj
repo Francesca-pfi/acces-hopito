@@ -161,6 +161,7 @@
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PatientView.cs" />
+    <Compile Include="Models\SecurePasswordHasher.cs" />
     <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
@@ -187,8 +188,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
       <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -229,12 +230,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Patients\WaitingRoom.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Authorization\" />
     <Folder Include="Views\Hospitals\" />
-    <Folder Include="Views\Patients\" />
     <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>

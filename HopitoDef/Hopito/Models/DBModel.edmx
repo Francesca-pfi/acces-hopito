@@ -44,7 +44,7 @@
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
-          <Property Name="password" Type="varbinary" MaxLength="512" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="512" Nullable="false" />
           <Property Name="name" Type="varchar" MaxLength="40" Nullable="false" />
           <Property Name="fname" Type="varchar" MaxLength="40" Nullable="false" />
           <Property Name="dateNaissance" Type="date" Nullable="false" />
@@ -168,7 +168,7 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="password" Type="Binary" MaxLength="512" FixedLength="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="512" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="fname" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dateNaissance" Type="DateTime" Nullable="false" Precision="0" />

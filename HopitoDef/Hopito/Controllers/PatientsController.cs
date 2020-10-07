@@ -14,5 +14,11 @@ namespace Hopito.Controllers
         {
             return View();
         }
+
+        public ActionResult WaitingRoom()
+        {
+            PatientView patient = new PatientView();
+            return View(patient);
+        }
     }
 }

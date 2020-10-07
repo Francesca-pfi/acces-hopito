@@ -17,7 +17,7 @@ namespace Hopito.Models
         public string Email { get; set; }
 
         [Display(Name = "Mot de passe")]
-        public byte[] Password { get; set; }
+        public string Password { get; set; }
 
         public string FirstName { get; set; }
 

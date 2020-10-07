@@ -17,12 +17,12 @@ namespace Hopito.Controllers
         }
         public ActionResult Register()
         {
-            User user = new User();
+            UserView user = new UserView();
             return View(user);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(User user)
+        public ActionResult Register(UserView user)
         {
             return RedirectToAction("Index");
         }
@@ -36,11 +36,6 @@ namespace Hopito.Controllers
         public ActionResult Login(LoginView user)
         {
             return RedirectToAction("Index");
-        }
-        public ActionResult WaitingRoom()
-        {
-            Patient patient = new Patient();
-            return View(patient);
         }
     }
 }

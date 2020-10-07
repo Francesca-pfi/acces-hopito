@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c259f16d99b04dfeb0c3d15a332e8a23" Name="Diagram1">
+      <Diagram DiagramId="87e33be04e1047e7a9890f38b1ea5dbf" Name="Diagram1">
         <EntityTypeShape EntityType="HopitoDBModel.Hopitaux" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="HopitoDBModel.Patient" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="HopitoDBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />

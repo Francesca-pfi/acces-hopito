@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -21,4 +21,93 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.centered {
+    margin: auto;
+    width: 70%;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item-big {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin-right: 20%
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.important {
+    font-size: 7em;
+    color: cadetblue;
+}
+
+.less-important {
+    font-size: 3em;
+    color: cadetblue;
+}
+
+.button-big {
+    font-size: 2em;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 15px;
+}
+
+.bg-cadetblue {
+    color: white;
+    background-color: cadetblue;
+    border-color: dodgerblue;
+}
+
+.bg-red {
+    color: white;
+    background-color: orangered;
+    border-color: red;
+}
+
+.bg-grey {
+    background-color: rgb(245,245,245);
+}
+
+.title-grey {
+    color: lightslategrey
+}
+
+.navbar-inverse .navbar-brand {
+    color: cadetblue;
+    font-size: 2em;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: lightblue;
+    font-size: 2em;
+}
+
+.navbar {
+    height: 80px;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 3em;
+    color: white;
+    background-color: cadetblue;
 }

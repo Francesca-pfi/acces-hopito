@@ -73,12 +73,24 @@ namespace Hopito.Models
             List<PatientView> patients = new List<PatientView>();
             if (DB.Patients != null)
             {
-                foreach (Patient actor in DB.Patients)
+                foreach (Patient patient in DB.Patients)
                 {
-                    patients.Add(actor.ToPatientView());
+                    patients.Add(patient.ToPatientView());
                 }
             }
-            return patients.OrderBy(f => f.Name).ToList();
+            return patients.OrderBy(f => f.ArrivalTime).ToList();
+        }
+        public static List<UserView> UsersList(this HopitoDBEntities DB)
+        {
+            List<UserView> users = new List<UserView>();
+            if (DB.Users != null)
+            {
+                foreach (User user in DB.Users)
+                {
+                    users.Add(user.ToUserView());
+                }
+            }
+            return users;
         }
         public static bool IdUserExists(this HopitoDBEntities DB, int idUser)
         {

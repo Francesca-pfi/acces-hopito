@@ -22,7 +22,7 @@ namespace Hopito.Models
     
         public int id { get; set; }
         public string email { get; set; }
-        public byte[] password { get; set; }
+        public string password { get; set; }
         public string name { get; set; }
         public string fname { get; set; }
         public System.DateTime dateNaissance { get; set; }
